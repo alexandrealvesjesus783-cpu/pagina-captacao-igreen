@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça o modelo de licenciamento iGreen Energy e converse com Alexandre, Executivo iGreen Energy.">
+  <meta name="theme-color" content="#087443">
+  <title>Seja um Licenciado | iGreen Energy</title>
+
+  <!-- Tag do Google Ads: identificador visto na sua conta.
+       Instalada uma única vez nesta página. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11190163063"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11190163063');
+  </script>
+
+  <style>
+    :root {
+      --green: #087443;
+      --deep: #064b30;
+      --lime: #a8d94b;
+      --ink: #17251e;
+      --muted: #5c6b63;
+      --paper: #f5f8f4;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink);
+      background: var(--paper); line-height: 1.55;
+    }
+    a { color: inherit; }
+    .topbar {
+      background: var(--white); border-bottom: 1px solid #e4ebe5;
+      padding: 14px 5%; display: flex; align-items: center;
+      justify-content: space-between; gap: 18px;
+    }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:800; color:var(--deep); }
+    .brand-mark {
+      width: 38px; height: 38px; border-radius: 12px; display:grid; place-items:center;
+      color:white; background:linear-gradient(135deg,var(--green),#49a94e); font-size:20px;
+    }
+    .brand small { display:block; font-size:10px; letter-spacing:2px; color:var(--muted); }
+    .nav-cta, .button {
+      display:inline-flex; justify-content:center; align-items:center; gap:8px;
+      border:0; border-radius:999px; background:var(--green); color:white;
+      padding:13px 21px; text-decoration:none; font-weight:700; cursor:pointer;
+    }
+    .nav-cta { padding:10px 17px; font-size:14px; }
+    .hero {
+      color:white; background:
+      linear-gradient(100deg,rgba(3,49,31,.94),rgba(5,91,52,.78)),
+      url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1800&q=85') center/cover;
+      padding:78px 6% 84px;
+    }
+    .hero-inner { max-width:1120px; margin:auto; display:grid; grid-template-columns:1.15fr .85fr; gap:44px; align-items:center; }
+    .eyebrow { color:#d7f3a5; text-transform:uppercase; letter-spacing:2px; font-size:12px; font-weight:800; }
+    h1 { font-size:clamp(36px,5.3vw,62px); line-height:1.05; margin:14px 0 20px; max-width:720px; }
+    .hero p { font-size:18px; max-width:620px; color:#edf7ef; }
+    .hero .button { background:var(--lime); color:#18351e; margin-top:14px; }
+    .hero-note { font-size:12px!important; color:#d7e9dc!important; margin-top:14px; }
+    .hero-card {
+      background:rgba(255,255,255,.96); color:var(--ink); border-radius:22px;
+      padding:28px; box-shadow:0 20px 55px rgba(0,0,0,.2);
+    }
+    .hero-card h2 { margin:0 0 8px; font-size:24px; color:var(--deep); }
+    .hero-card p { color:var(--muted); font-size:14px; margin:0 0 18px; }
+    .form-grid { display:grid; gap:12px; }
+    input, select {
+      width:100%; border:1px solid #d8e2da; border-radius:11px; padding:14px;
+      font:inherit; background:white; color:var(--ink);
+    }
+    input:focus, select:focus { outline:2px solid #8dcf9d; border-color:var(--green); }
+    .form-grid button { width:100%; margin-top:4px; font-size:15px; }
+    .privacy { font-size:11px; color:#6a786f; margin:10px 0 0; }
+    section { padding:68px 6%; }
+    .wrap { max-width:1100px; margin:auto; }
+    .section-head { text-align:center; max-width:720px; margin:0 auto 34px; }
+    .section-head .eyebrow { color:var(--green); }
+    h2 { font-size:clamp(27px,3vw,38px); line-height:1.15; margin:10px 0 12px; }
+    .section-head p { color:var(--muted); }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card {
+      background:white; border:1px solid #e5ece6; border-radius:18px; padding:24px;
+      box-shadow:0 8px 25px rgba(23,54,34,.045);
+    }
+    .icon {
+      width:45px; height:45px; display:grid; place-items:center; border-radius:14px;
+      background:#eaf5e8; color:var(--green); font-size:22px; margin-bottom:14px;
+    }
+    .card h3 { margin:0 0 8px; font-size:18px; }
+    .card p { margin:0; color:var(--muted); font-size:14px; }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; counter-reset:step; }
+    .step { padding:20px 20px 20px 0; border-top:2px solid #cfe3d1; }
+    .step strong { display:block; color:var(--green); margin-bottom:8px; }
+    .step p { color:var(--muted); font-size:14px; margin:0; }
+    .cta-band { background:var(--deep); color:white; text-align:center; padding:55px 6%; }
+    .cta-band p { color:#e1eee5; max-width:650px; margin:0 auto 20px; }
+    .cta-band .button { background:var(--lime); color:#18351e; }
+    footer { padding:26px 6%; text-align:center; color:#68766d; font-size:12px; }
+    .floating {
+      position:fixed; right:18px; bottom:18px; z-index:10; border-radius:999px;
+      background:#20b85a; color:white; text-decoration:none; padding:14px 18px;
+      font-weight:800; box-shadow:0 8px 24px rgba(0,0,0,.2);
+    }
+    @media(max-width:800px) {
+      .hero-inner { grid-template-columns:1fr; }
+      .hero { padding:55px 6%; }
+      .cards, .steps { grid-template-columns:1fr; }
+      .topbar { padding:12px 4%; }
+      .nav-cta { font-size:12px; padding:9px 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">i</div>
+      <div>iGREEN ENERGY<small>OPORTUNIDADE DE NEGÓCIO</small></div>
+    </div>
+    <a class="nav-cta" href="#cadastro">Quero saber mais</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Empreendedorismo • Mercado de energia</div>
+          <h1>Uma nova oportunidade para desenvolver seu próprio negócio.</h1>
+          <p>Conheça o modelo de licenciamento iGreen Energy e descubra como você pode apresentar soluções e desenvolver sua atuação no mercado de energia.</p>
+          <a class="button" href="#cadastro">Quero conhecer o modelo <span aria-hidden="true">→</span></a>
+          <p class="hero-note">Converse diretamente com Alexandre, Executivo iGreen Energy.</p>
+        </div>
+
+        <div class="hero-card" id="cadastro">
+          <h2>Vamos conversar?</h2>
+          <p>Preencha seus dados. Você será direcionado ao WhatsApp para falar com nossa equipe.</p>
+          <form class="form-grid" id="leadForm">
+            <input id="nome" name="nome" type="text" placeholder="Seu nome completo" autocomplete="name" required>
+            <input id="cidade" name="cidade" type="text" placeholder="Sua cidade / Estado" autocomplete="address-level2" required>
+            <input id="telefone" name="telefone" type="tel" placeholder="Seu telefone com DDD" autocomplete="tel" required>
+            <select id="interesse" name="interesse" required>
+              <option value="">Qual é seu principal interesse?</option>
+              <option>Quero conhecer o licenciamento</option>
+              <option>Quero empreender no mercado de energia</option>
+              <option>Quero expandir meu negócio atual</option>
+              <option>Quero receber mais informações</option>
+            </select>
+            <button class="button" type="submit">Enviar e continuar no WhatsApp</button>
+          </form>
+          <p class="privacy">Ao enviar, seus dados serão usados para responder ao seu pedido de contato. Esta página abre uma conversa no WhatsApp; não armazena os dados em um banco de leads.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Conheça a proposta</div>
+          <h2>Desenvolva sua atuação com soluções iGreen Energy</h2>
+          <p>Entenda as possibilidades, conheça as soluções disponíveis e converse para avaliar se o modelo faz sentido para seus objetivos.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">⚡</div><h3>Mercado de energia</h3><p>Conheça as soluções e oportunidades relacionadas ao setor de energia.</p></article>
+          <article class="card"><div class="icon">🤝</div><h3>Desenvolvimento comercial</h3><p>Conheça o modelo de atuação e como desenvolver relacionamentos com clientes.</p></article>
+          <article class="card"><div class="icon">📈</div><h3>Empreendedorismo</h3><p>Converse sobre o processo de licenciamento, suporte e próximos passos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:#edf4ed">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Como começar</div>
+          <h2>Conheça o modelo antes de tomar sua decisão</h2>
+        </div>
+        <div class="steps">
+          <div class="step"><strong>01 · Demonstre interesse</strong><p>Envie seus dados pelo formulário para iniciar a conversa.</p></div>
+          <div class="step"><strong>02 · Tire suas dúvidas</strong><p>Converse com Alexandre e conheça as informações do modelo de licenciamento.</p></div>
+          <div class="step"><strong>03 · Avalie os próximos passos</strong><p>Analise as condições, responsabilidades e materiais oficiais antes de decidir.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap">
+        <h2>Quer conhecer melhor essa oportunidade?</h2>
+        <p>Fale com Alexandre, Executivo iGreen Energy, e solicite mais informações sobre o modelo de licenciamento.</p>
+        <a class="button" href="https://wa.me/5562993210298?text=Ol%C3%A1%2C%20Alexandre!%20Quero%20conhecer%20o%20modelo%20de%20licenciamento%20iGreen%20Energy." target="_blank" rel="noopener">Conversar pelo WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Alexandre · Executivo iGreen Energy</strong><br>
+    Informações sobre licenciamento sujeitas às condições e materiais oficiais da iGreen Energy.
+    A página não promete ganhos ou resultados financeiros.
+  </footer>
+
+  <a class="floating" href="https://wa.me/5562993210298?text=Ol%C3%A1%2C%20Alexandre!%20Quero%20saber%20mais%20sobre%20a%20iGreen%20Energy." target="_blank" rel="noopener" aria-label="Falar com Alexandre pelo WhatsApp">WhatsApp</a>
+
+  <script>
+    document.getElementById('leadForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const nome = document.getElementById('nome').value.trim();
+      const cidade = document.getElementById('cidade').value.trim();
+      const telefone = document.getElementById('telefone').value.trim();
+      const interesse = document.getElementById('interesse').value;
+      if (!nome || !cidade || !telefone || !interesse) return;
+
+      const mensagem = `Olá, Alexandre! Meu nome é ${nome}. Sou de ${cidade}. Meu telefone é ${telefone}. Meu interesse: ${interesse}. Gostaria de conhecer o modelo de licenciamento iGreen Energy.`;
+      const url = 'https://wa.me/5562993210298?text=' + encodeURIComponent(mensagem);
+      window.open(url, '_blank', 'noopener');
+    });
+  </script>
+</body>
+</html>
